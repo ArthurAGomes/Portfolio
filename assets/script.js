@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Typed.js initialization
     new Typed('.typedText', {
-        strings: ["Sou o Arthur, Web Developer.", "Trabalho com Front end", "Vamos criar algo incrível juntos."],
+        strings: ["Sou o Arthur, Web Developer.", "Trabalho com Front end", "Vamos criar algo incrível juntos?!"],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true

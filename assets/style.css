@@ -574,13 +574,12 @@ ul {
 .project-box h3{
     color: var(--text-color);
 }
-.project-box>i {
-    font-size: 40px;
-    color: #2E8B57;
-    margin-bottom: 25px;
+.project-box>a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-.project-box label {
+.project-box span{
     text-align: center;
     font-size: 15px;
     color: var(--text-color);
@@ -603,9 +602,9 @@ ul {
     bottom: 0;
 }
 
-.project-box:hover i,
+.project-box:hover span,
 .project-box:hover h3,
-.project-box:hover label {
+.project-box:hover a {
     color: #fff;
     z-index: 2;
 }
@@ -632,6 +631,9 @@ ul {
     cursor: pointer;
 }
 
+#encontre{
+    color: var(--text-color);
+}
 .contact-info>h2 {
     color: var(--text-color);
     margin-bottom: 20px;
@@ -647,7 +649,7 @@ ul {
 
 .contact-info:hover h2,
 .contact-info:hover p,
-.contact-info:hover i {
+.contact-info:hover #encontre {
     color: #fff;
     z-index: 2;
 }
