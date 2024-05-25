@@ -4,9 +4,9 @@ function saudacao() {
     var hora = data.getHours();
     var saudacao;
 
-    if (hora < 12) {
+    if (hora >= 5 && hora < 13) {
         saudacao = 'Bom dia!';
-    } else if (hora < 18) {
+    } else if (hora >= 13 && hora < 18) {
         saudacao = 'Boa tarde!';
     } else {
         saudacao = 'Boa noite!';
