@@ -104,7 +104,7 @@ function scrollActive() {
 
         if (scrolly > sectionTop && scrolly <= sectionTop + sectionHeight) {
             link.classList.add("active-link");
-            foundActive = true; // Set the flag when an active section is found
+            foundActive = true; 
         } else {
             link.classList.remove("active-link");
         }
