@@ -5,35 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/elementos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/elementos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
 <body onload="saudacao()">
+    <div id="particles-js"></div> <!-- Adicionado para Particles.js -->
+    <!-- tela de carregamento  -->
+    <div id="loader"> 
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+    </div>
     <div class="container">
         <!-- Navigation -->
         <nav id="header">
             <div class="nav-logo">
-                <button class="logo-icone">
-                    <span>Arthur</span>
-                </button>
+                <div class="logo">
+                    <a href="index.html">ArthurAgomes <span class="destaque">│Dev.</span></a>
+                </div>
             </div>
             <div class="nav-menu" id="myNavMenu">
                 <ul class="nav_menu_list">
-                    <li class="nav_list"><a href="#home" class="nav-link active-link">Home</a></li>
-                    <li class="nav_list"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav_list"><a href="#projetos" class="nav-link">Projetos</a></li>
-                    <li class="nav_list"><a href="#contato" class="nav-link">Contato</a></li>
+                    <li class="nav_list"><a href="index.html" class="nav-link active-link">Home</a></li>
+                    <li class="nav_list"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav_list"><a href="projetos.html" class="nav-link">Projetos</a></li>
+                    <li class="nav_list"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
-            <div class="mode">
-                <div class="moon-sun" id="toggle-switch">
-                    <i class="fa fa-moon" id="moon"></i>
-                    <i class="fa fa-sun" id="sun"></i>
-                </div>
-            </div>
-            <div class="nav-menu-btn">
+            
+            <div class="nav-menu-btn" id="toggle-switch">
                 <i class="fa-solid fa-bars" id="menu-toggle"></i>
             </div>
         </nav>
@@ -43,13 +48,13 @@
             <!-- Featured Section -->
             <section class="featured-box" id="home">
                 <div class="featured-text">
-                    <div class="hello">
+                    <div class="hello reveal">
                         <span id="saudacao"></span>
                     </div>
-                    <div class="featured-name">
+                    <div class="featured-name reveal">
                         <span class="typedText"></span>
                     </div>
-                    <div class="text-btn">
+                    <div class="text-btn reveal">
                         <a href="#contato">
                             <button class="button"> Fale comigo
                             </button>
@@ -64,7 +69,7 @@
                             <span class="tooltip">Baixar CV</span>
                         </button>
                     </div>
-                    <div class="socical_icons">
+                    <div class="socical_icons reveal">
                         <ul class="example-2">
                             <li class="icon-content">
                                 <a href="https://www.linkedin.com/in/arthur-amorim-gomes-b20821261/" target="_blank"
@@ -106,121 +111,43 @@
 
                     </div>
                 </div>
-                <div class="featured-image">
+                <div class="featured-image reveal">
                     <div class="image">
                         <img src="imgs/perfil.jpg" alt="">
                     </div>
                 </div>
             </section>
+        </main>
 
-            <!-- About Section -->
-            <section class="section" id="sobre">
-                <div class="top-header">
-                    <h1>Sobre Mim</h1>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-info">
-                            <figure class="about-me">
-                                <figcaption>
-                                    <h2>Web Developer</h2>
-                                    <p>A web developer with 1 year experience.</p>
-                                </figcaption>
-                            </figure>
-                            <button class="about-me-btn">Hire me</button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="skill">
-                            <h2 class="titulo-skill">Skills</h2>
-                            <div class="skill-box">
-                                <div class="skill-caixa">
-                                    <i class="fa-brands fa-html5"></i>
-                                </div>
-                                <div class="skill-caixa">
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </div>
-                                <div class="skill-caixa">
-                                    <i class="fa-brands fa-js"></i>
-                                </div>
-                                <div class="skill-caixa"><i class="fa-brands fa-php"></i></div>
-                                <div class="skill-caixa"><i class="fa-solid fa-database"></i></div>
-                                <div class="skill-caixa"><i class="fa-brands fa-react"></i></div>
-                                <div class="skill-caixa"><i class="fa-brands fa-figma"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projetos">
-        <div class="top-header">
-            <h1>Projetos</h1>
-        </div>
-
-        <div class="project-container"></div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contato">
-
-
-        <div class="top-header">
-            <h1>Vamos trabalhar juntos</h1>
-            <span>Tem um projeto em mente? Contacte-me!</span>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Encontrar-me</h2><i class="fa-solid fa-down-long" id="encontre"></i>
-                    <p><i class="fa-solid fa-envelope"></i>Arthur.agomes06@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>(11) 94068-5885</p>
-                </div>
+        <!-- Footer -->
+        <!-- <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list"><a href="#home">Home</a></li>
+                    <li class="footer_menu_list"><a href="#sobre">Sobre</a></li>
+                    <li class="footer_menu_list"><a href="#projetos">Projetos</a></li>
+                    <li class="footer_menu_list"><a href="#contato">Contato</a></li>
+                </ul>
             </div>
-            <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Seu nome">
-                        <input type="text" class="input-field" placeholder="Seu Email">
-                    </div>
-                    <input type="text" class="input-subject" placeholder="Subject">
-                    <textarea placeholder="Message"></textarea>
-                    <div class="form-button">
-                        <button class="btn">Send<i class="fa-solid fa-paper-plane"></i></button>
-                    </div>
-                </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="icon"><i class="fa-brands fa-github"></i></div>
             </div>
-        </div>
-    </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list"><a href="#home">Home</a></li>
-                <li class="footer_menu_list"><a href="#sobre">Sobre</a></li>
-                <li class="footer_menu_list"><a href="#projetos">Projetos</a></li>
-                <li class="footer_menu_list"><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-        <div class="footer-social-icons">
-            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
-            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-            <div class="icon"><i class="fa-brands fa-github"></i></div>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ArthurAgomes</a> - All rights
-                reserved 2024</p>
-        </div>
-    </footer>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ArthurAgomes</a> - All rights
+                    reserved 2024</p>
+            </div>
+        </footer> -->
     </div>
-    <script src="assets/git.js"></script>
+    <script src="assets/js/git.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-    <script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="assets/js/particles-config.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/loader.js"></script>
+    
 </body>
 
 </html>
