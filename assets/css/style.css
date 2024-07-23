@@ -65,17 +65,6 @@ body {
     background: var(--body-color);
 }
 
-body.dark {
-    --body-color: #202425;
-    --box-color: #fff;
-    --nav-color: #262425;
-    --color-white: #fff;
-    --text-color: #fff;
-    --nav-icon: #fff;
-    --logo-color: #fff;
-    --icon-color: #2E8B57;
-    --mode-color: #fff;
-}
 
 .container {
     width: 100%;
@@ -393,7 +382,6 @@ footer {
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: var(--body-color);
     padding-block: 40px 60px;
 }
 
@@ -428,7 +416,456 @@ footer {
     color: var(--text-color);
 }
 
+/* ABOUT */
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 0rem 0rem 2.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.content-about-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.content-about-left span {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.content-about-left h1 {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.content-about-left p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding-top: 1.5rem;
+    color: #FFF;
+}
+
+.cta-about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 1.6rem;
+}
+
+.btn-about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-social {
+    width: 100%;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    padding-top: 1.6rem;
+    height: 100%;
+}
+
+.about-social a {
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: translateY(0);
+}
+
+.about-social a:hover {
+    transform: translateY(-5px);
+}
+
+.about-social a:hover .fa-github {
+    color: #454545;
+}
+
+.about-social a:hover .fa-linkedin {
+    color: #0e76a8;
+}
+
+.about-social a:hover .fa-tiktok {
+    color: #353535;
+}
+
+.about-social a:hover .fa-instagram {
+    color: #e4405f;
+}
+
+.content-about-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-about img {
+    width: 100%;
+}
+
+/* Estilos base para o ícone do chevron */
+.chevron-down {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.4s ease-out;
+    opacity: 0;
+    user-select: none;
+}
+
+.chevron-down img {
+    width: 32px;
+}
+
+/* Animação para o movimento suave do chevron */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
+/*SKILLS*/
+.skills {
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.container-skills {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-headline {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+
+.skills-headline span {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.skills-headline h1 {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-headline p {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding-top: 1.6rem;
+    color: var(--gray);
+}
+
+.list-about {
+    padding-top: 1.6rem;
+}
+
+.container-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.container-list i {
+    color: #2E8B57;
+}
+
+.list-about li {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    
+}
+
+.skills-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 2rem 0rem;
+}
+
+.card-tech {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card-tech img {
+    width: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.card-tech:hover {
+    transform: translateY(-5px);
+}
+
+.card-tech:hover img {
+    opacity: 0.6;
+    filter: brightness(0) invert(1);
+}
+
+.card-tech:hover img[data-tech="html"] {
+    filter: sepia(1) hue-rotate(-35deg) saturate(5);
+}
+
+.card-tech:hover img[data-tech="css"] {
+    filter: sepia(1) hue-rotate(180deg) saturate(10);
+}
+
+.card-tech:hover img[data-tech="js"] {
+    filter: sepia(1) hue-rotate(45deg) saturate(10);
+}
+
+.card-tech:hover img[data-tech="bootstrap"] {
+    filter: sepia(1) hue-rotate(265deg) saturate(8);
+}
+/* Projetos inicio  */
+
+/* PROJECTS */
+.projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    color: #FFf;
+}
+
+.container-projects {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container dos cards */
+.cards-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Card individual */
+.card-project {
+    background-color: #151515;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.card-project:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem do projeto */
+.img-project {
+    /* background-color: #FFF; */
+    border-radius: 25px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Conteúdo do card */
+.content-card {
+    color: #d0caca;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Texto do projeto */
+.text-project {
+    width: 100%;
+    text-align: left;
+}
+
+.text-project h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0 0.5rem;
+}
+
+.text-project span {
+    font-size: 1rem;
+    /* color: #FFF; */
+    font-weight: 300;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.text-project p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+/* Seção de tags e botão */
+.cta-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+}
+
+.tag-project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag-project i {
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover nos ícones */
+.tag-project i:hover.fa-html5 {
+    color: #e34c26;
+}
+
+.tag-project i:hover.fa-css3-alt {
+    color: #1572B6;
+}
+
+.tag-project i:hover.fa-js {
+    color: #F7DF1E;
+}
+
+.tag-project i:hover.fa-bootstrap {
+    color: #7952B3;
+}
+
+.tag-project i:hover.fa-wordpress {
+    color: #21759B;
+}
+
+.tag-project i:hover.fa-wix {
+    color: #8c8c8c;
+}
+
+.btn-project a {
+    display: block;
+    text-align: center;
+    padding: 0.7rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-project a:hover {
+    background-color: #0056b3;
+}
+
+
 /* Media Queries */
+/* menu reponsivo */
 @media only screen and (max-width: 1024px) {
     .featured-text {
         padding: 0;

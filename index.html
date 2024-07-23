@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio</title>
+    <title>ArthrAGomes</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/elementos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body onload="saudacao()">
-    <div id="particles-js"></div> <!-- Adicionado para Particles.js -->
+    <div id="particles-js"></div>
     <!-- tela de carregamento  -->
-    <div id="loader"> 
+    <div id="loader">
         <div class="loader-content">
             <div class="loader-circle"></div>
             <div class="loader-circle"></div>
@@ -37,7 +40,6 @@
                     <li class="nav_list"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
-            
             <div class="nav-menu-btn" id="toggle-switch">
                 <i class="fa-solid fa-bars" id="menu-toggle"></i>
             </div>
@@ -108,7 +110,6 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
                 <div class="featured-image reveal">
@@ -117,10 +118,265 @@
                     </div>
                 </div>
             </section>
+            <section id="about" class="about">
+                <div class="container-about">
+                    <div class="content-about">
+                        <div class="content-about-left" data-aos="fade-right">
+                            <h1>Olá, me chamo Arthur</h1>
+                            <p>Sou desenvolvedor web freelancer e empreendedor digital. Com mais de 4 anos de experiência, tenho
+                                um histórico comprovado de transformar ideias em soluções digitais eficazes. Além disso, sou
+                                criador de conteúdo no TikTok, onde ensino e inspiro pessoas a explorarem o freelancing como uma
+                                carreira viável ou uma fonte de renda extra.</p>
+                            <p>Atualmente, estou cursando Engenharia de Software para aprofundar ainda mais meus conhecimentos.
+                                Se você está buscando um parceiro para levar seu negócio online ao próximo nível, vamos
+                                conversar!</p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                <div class="container-skills">
+                    <div class="skills-headline">
+                        <span class="destaque">Conheça um pouco minhas</span>
+                        <h1>Habilidades</h1>
+                        <div class="list-about">
+                            <span class="destaque">Soft skills</span>
+                            <div class="container-list" data-aos="fade-up">
+                                <ul>
+                                    <li><i class="fa-solid fa-angles-right"></i> Comunicação</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Colaboração</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Resolução</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Adaptabilidade</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Pontualidade</li>
+                                </ul>
+                                <ul>
+                                    <li><i class="fa-solid fa-angles-right"></i> Detalhismo</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Crítica</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Criatividade</li>
+                                    <li><i class="fa-solid fa-angles-right"></i> Autodidatismo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-info">
+                        <div class="card-tech">
+                            <img src="imgs/skills-img/html5.png" alt="">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="card-tech" data-aos="fade-up" data-aos-delay="100">
+                            <img src="imgs/skills-img/css3.png" alt="">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="card-tech" data-aos="fade-up" data-aos-delay="200">
+                            <img src="imgs/skills-img/javascript.png" alt="">
+                            <p>Javascript</p>
+                        </div>
+                        <div class="card-tech" data-aos="fade-up" data-aos-delay="400">
+                            <img src="imgs/skills-img/php.png" alt="">
+                            <p>PHP</p>
+                        </div>
+                        <div class="card-tech" data-aos="fade-up" data-aos-delay="600">
+                            <img src="imgs/skills-img/react.png" alt="">
+                            <p>React</p>
+                        </div>
+                        <div class="card-tech" data-aos="fade-up" data-aos-delay="800">
+                            <img src="imgs/skills-img/figma.png" alt="">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!--Start Section Projects-->
+    <section id="projects" class="projects">
+        <div class="container-projects">
+
+            <div class="headline" data-aos="fade-up" data-aos-delay="100">
+                <span class="destaque">Veja soluções reais</span>
+                <h1>Alguns projetos</h1>
+            </div>
+
+            <div class="content-projects">
+                <div class="cards-projects">
+
+                    <!--Card Projeto 1-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="img-project">
+                            <img src="assets/image/projeto-bdn.png" alt="bnd logistics">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Portal Pedreiro</h2>
+                                <span>Institucional</span>
+                                <p>Portal multilíngue iluminando o universo da logística com insights, ferramentas de
+                                    contato e cotação, promovendo interação e soluções globais.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://arthuragomes.github.io/P.I/" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 1-->
+
+                    <!--Card Projeto 2-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="img-project">
+                            <img src="assets/image/projeto-2-tread.png" alt="Tread Skateboard">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Tread Skateboard</h2>
+                                <span>E-Commerce</span>
+                                <p>Desenvolvido para oferecer uma experiência única, o site reflete a essência do
+                                    skateboarding com design intuitivo e uma plataforma de compras.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-wix"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://www.treadskateboard.com.br/" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 2-->
+
+                    <!--Card Projeto 3-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="img-project">
+                            <img src="assets/image/projeto-hugo-bartol.png" alt="projeto 3">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Hugo Bartol</h2>
+                                <span>Tipo de site</span>
+                                <p>Desenvolvido para destacar a criatividade e inovação, este portfólio online exibe os
+                                    melhores trabalhos de design em uma interface moderna.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-wordpress"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://www.hugobartol.com.br/" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 3-->
+
+                    
+        <div class="chevron-down">
+            <img src="assets/image/scroll-icon.png" alt="image">
+        </div>
+
+                    <!--Card Projeto 4-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="img-project">
+                            <img src="assets/image/projeto-3-copfy.png" alt="copfy">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Copfy</h2>
+                                <span>Blog • E-Commerce • Institucional</span>
+                                <p>Portal completo que reúne um blog informativo, uma plataforma de vendas online e um
+                                    diretório de serviços, tudo em um único ambiente. </p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-wordpress"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://www.home.copfy.com.br/" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 4-->
+
+                    <!--Card Projeto 5-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="img-project">
+                            <img src="assets/image/projeto-helo-repens.png" alt="Helo Fernandes">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Helo Fernandes</h2>
+                                <span>E-Commerce</span>
+                                <p>Desenvolvido como uma joalheria online, este site exibe as joias elegantes de Helo
+                                    Fernandes, oferecendo uma experiência de compra luxuosa e intuitiva.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-wix"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://helofernandes.com.br/" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 5-->
+
+                    <!--Card Projeto 6-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="img-project">
+                            <img src="assets/image/projeto-Ebook.png" alt="Freelancer de Sucesso">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Freelancer de Sucesso</h2>
+                                <span>Landing Page</span>
+                                <p>Este site fornece recursos essenciais e guias práticos para freelancers, oferecendo uma experiência enriquecedora e motivadora para alcançar a liberdade profissional.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-bootstrap"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://www.viverdefreelancer.com.br/" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 6-->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
         </main>
 
         <!-- Footer -->
-        <!-- <footer>
+        <footer>
             <div class="middle-footer">
                 <ul class="footer-menu">
                     <li class="footer_menu_list"><a href="#home">Home</a></li>
@@ -138,16 +394,21 @@
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ArthurAgomes</a> - All rights
                     reserved 2024</p>
             </div>
-        </footer> -->
+        </footer>
     </div>
-    <script src="assets/js/git.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/git.js"></script>
+    <script src="assets/js/imageScroll.js"></script>
     <script src="assets/js/particles-config.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/loader.js"></script>
-    
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

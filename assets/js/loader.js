@@ -13,8 +13,8 @@
       anime({
           targets: '.loader-circle',
           translateY: [
-              { value: -20, duration: 500 },
-              { value: 0, duration: 500 }
+              { value: -20, duration: 400 },
+              { value: 0, duration: 400 }
           ],
           delay: anime.stagger(100, { start: 0, from: 'center', direction: 'normal' }),
           loop: true
@@ -23,7 +23,7 @@
           anime({
               targets: '#loader',
               opacity: 0,
-              duration: 500,
+              duration: 400,
               easing: 'easeOutExpo',
               complete: function() {
                   loader.style.display = 'none';
